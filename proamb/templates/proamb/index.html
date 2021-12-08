@@ -1,0 +1,184 @@
+{% extends 'proamb/base.html' %} {% block content %}
+
+<!-- section0 -->
+<section id="section0" class="w-100 vh-100 banner-image">
+  <div
+    class="
+      w-100
+      vh-100
+      d-flex
+      justify-content-center
+      align-items-center
+      banner-image
+      position-relative
+    "
+  >
+    <div class="text-center text-banner">
+      <h1 class="mb-5">
+        <strong> Una solución exitosa</strong>
+        <br />
+        para el cuidado de tus ambientes
+      </h1>
+      <a href="#footer" class="btn-custom">CONTACTANOS</a>
+      <div class="position-absolute bottom-0 start-50 translate-middle-x">
+        <div class="icono-chevron">
+          <span class="fw-bold">VER MÁS</span>
+          <a href="#section1">
+            <i class="bi bi-chevron-down d-block fs-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <!-- section1 -->
+  <section id="section1">
+    <div class="container py-7">
+      <div class="row">
+        <div
+          class="
+            col-12 col-md-6
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <div>
+            <h2>
+              Más de 40 años
+              <br />
+              de experiencia
+            </h2>
+            <p>
+              Somos pioneros en el servicio integral de control de plagas, al
+              servicio del sector industrial, comercial, institucional y
+              privado.
+            </p>
+          </div>
+        </div>
+        {% load static %}
+        <div class="col-12 col-md-6">
+          <img src="{% static "proamb/images/foto-flota.jpg" %}" alt=""
+          class="img-fluid"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section2 -->
+  <section id="section2">
+    <div class="container py-6">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center pb-3 text-center">
+          <h3>Limpieza y desinfección de tanques de agua</h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <a href="/tanques" class="btn-custom-outline">VER MÁS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section3 -->
+  <section id="section3">
+    <div class="container py-6">
+      <h2 class="text-center mb-5">REALIZAMOS CONTROL DE PLAGAS</h2>
+      <div class="row">
+        {% load static %}
+        <div
+          class="col-12 col-md-6 col-lg-3 py-3 d-flex justify-content-center"
+        >
+          <a href="/jardin">
+            <img src={% static 'proamb/images/tarjetacategoria-jardin.jpg' %}
+            alt="" class="img-fluid img-secciones" />
+          </a>
+        </div>
+        {% load static %}
+        <div
+          class="col-12 col-md-6 col-lg-3 py-3 d-flex justify-content-center"
+        >
+          <a href="/maderas">
+            <img src={% static 'proamb/images/tarjetacategoria-maderas.jpg' %}
+            alt="" class="img-fluid img-secciones" />
+          </a>
+        </div>
+
+        {% load static %}
+        <div
+          class="col-12 col-md-6 col-lg-3 py-3 d-flex justify-content-center"
+        >
+          <a href="/industriahogar">
+            <img
+              src="{% static 'proamb/images/tarjetacategoria-induhogar.jpg' %}"
+              alt=""
+              class="img-fluid img-secciones"
+            />
+          </a>
+        </div>
+        {% load static %}
+        <div
+          class="col-12 col-md-6 col-lg-3 py-3 d-flex justify-content-center"
+        >
+          <a href="/granos">
+            <img
+              src="{% static 'proamb/images/tarjetacategoria-granosalmacenados.jpg' %}"
+              alt=""
+              class="img-fluid img-secciones"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section4 -->
+  <section id="section4">
+    <div class="container py-6">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center pb-3 text-center">
+          <h3>Somos especialistas en <strong>hormigas y cucarachas</strong></h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <a
+            href="https://hormigas.proamb.com.ar/"
+            target="_blanck"
+            class="btn-custom-outline mx-3"
+            >HORMIGAS</a
+          >
+          <a
+            href="https://cucarachas-proamb.solvoweb.com/"
+            target="_blanck"
+            class="btn-custom-outline mx-3"
+            >CUCARACHAS</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section5 -->
+  <section id="section5">
+    <div class="container py-6">
+      {% load static %}
+      <div class="position-relative">
+        <img src="{% static "proamb/images/icono-estrella-proamb.png" %}" alt=""
+        class="icono-estrella img-fluid position-absolute" />
+        <div class="ms-5">
+          <h3>
+            Brindamos soluciones innovadoras
+            <br />
+          </h3>
+          <p>
+            Contamos con infraestructura idónea y perseguimos
+            <br />
+            las innovaciones en calidad y en equipamiento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

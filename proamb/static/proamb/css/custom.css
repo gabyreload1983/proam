@@ -1,0 +1,418 @@
+:root {
+  /* 24272c */
+  --color-gris: #222324;
+  --color-blanco: #ffffff;
+  /* 7aa44e */
+  --color-verde: #80ac4d;
+  --color-verde-light: #9dc666;
+  --color-gris-light: #2a2b2d;
+  --color-gris-texto: #878986;
+}
+
+/* topografia */
+
+body {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-blanco);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+#section1 p {
+  font-weight: 600;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+
+.form-control {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+#section1 {
+  color: #707070;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .footer-heading {
+    font-size: 2.2rem;
+  }
+}
+
+/* buttons */
+.btn-custom {
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  padding: 15px 20px;
+  border: 0;
+  font-family: "Bebas Neue ";
+  letter-spacing: 1px;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.btn-custom:hover {
+  background-color: var(--color-verde-light);
+  color: var(--color-blanco);
+  transform: scale(1.05);
+}
+
+.btn-custom-outline {
+  background-color: var(--color-blanco);
+  color: var(--color-verde);
+  padding: 15px 20px;
+  border: 0;
+  font-family: "Bebas Neue ";
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.btn-custom-outline:hover {
+  color: var(--color-verde-light);
+  transform: scale(1.05);
+}
+
+/* navbar */
+.logo-proamb {
+  height: 70px;
+  transition: 0.5s;
+}
+
+.logo-proamb-scroll {
+  height: 50px;
+  transition: 0.5s;
+}
+
+.nav-link {
+  color: var(--color-blanco);
+  font-weight: bold;
+}
+
+.bg-custom {
+  background-color: var(--color-gris);
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-proamb {
+    height: 100px;
+  }
+}
+
+/* section0 */
+
+.banner-image {
+  background-image: url("../images/banner-home-1-proamb.jpg");
+  background-attachment: fixed;
+  background-position-x: 40%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-image {
+    background-size: cover;
+    background-position-x: 0;
+    /* background-attachment: unset; */
+  }
+}
+
+.bi-chevron-down {
+  color: var(--color-blanco);
+}
+
+.bi-chevron-down:hover {
+  transform: scale(1.3);
+}
+
+/* section1 */
+
+/* section2 */
+
+#section2,
+#section4 {
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+}
+
+/* section3 */
+#section3 {
+  background-color: var(--color-verde-light);
+}
+
+.img-secciones:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+/* section4 */
+
+.icono-estrella {
+  width: 40px;
+  height: 40px;
+}
+
+/* industriaHogar */
+
+.banner-industriaHogar {
+  height: 50vh;
+  background-image: url("../images/banner-industria-hogar-proamb.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+}
+.card-text,
+.card-title {
+  color: var(--color-gris);
+  font-weight: 400;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+#industriaHogar3 h3 {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-industriaHogar {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  #industriaHogar3 h3 {
+    font-size: 2rem;
+  }
+  .img-bichos {
+    order: -1;
+  }
+}
+
+/* granos */
+.banner-granos {
+  height: 50vh;
+  background-image: url("../images/banner-granos-proamb.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+#granos0 h1 {
+  font-size: 1.5rem;
+}
+
+#granos3 h3 {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  #granos0 h1 {
+    font-size: 2.5rem;
+  }
+
+  #granos3 h3 {
+    font-size: 1.5rem;
+  }
+  .banner-granos {
+    height: 80vh;
+  }
+}
+
+/* tanques */
+.banner-tanques {
+  height: 50vh;
+  background-image: url("../images/banner-tanques-proamb.jpg");
+  background-size: cover;
+}
+
+#tanques1 {
+  background-color: var(--color-verde);
+}
+
+#tanques2 h3 {
+  color: var(--color-gris);
+}
+
+#tanques2 p {
+  color: var(--color-gris-texto);
+}
+
+#tanques3 {
+  background-color: #f1f1f1;
+}
+
+#tanques3 h3 {
+  color: var(--color-gris);
+}
+
+#tanques3 p {
+  color: var(--color-gris-texto);
+}
+
+#tanques4 h3 {
+  color: var(--color-gris);
+}
+
+#tanques4 p {
+  color: var(--color-gris-texto);
+}
+
+#tanques5 {
+  background-color: var(--color-gris-light);
+}
+
+#tanques5 h3 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-tanques {
+    height: 80vh;
+  }
+}
+
+/* maderas */
+.banner-maderas {
+  height: 50vh;
+  background-image: url("../images/banner-madera-proamb.jpg");
+  background-size: cover;
+}
+
+#maderas1 {
+  background-color: #434446;
+}
+
+#maderas3 {
+  background-color: var(--color-gris);
+}
+
+#maderas3 h3 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-maderas {
+    height: 80vh;
+  }
+}
+
+/* jardin */
+.banner-jardin {
+  height: 50vh;
+  background-image: url("../images/banner-jardin-proamb.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+#jardin3 h3 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-jardin {
+    height: 80vh;
+  }
+}
+
+/* footer */
+footer {
+  background-color: var(--color-gris);
+  color: var(--color-gris-texto);
+}
+
+.form {
+  color: #fff;
+}
+
+/* .form-control {
+  background-color: transparent;
+}
+.form-control:focus {
+  background-color: transparent;
+} */
+
+footer a {
+  text-decoration: none;
+  color: var(--color-gris-texto);
+}
+
+footer a:hover {
+  color: var(--color-blanco);
+  transition: 0.5s;
+}
+
+/* iconoWhatsapp */
+.icono-whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+}
+
+.icono-whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/* custom padding */
+.py-6,
+.py-7 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .py-6 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .py-7 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+/* comun */
+
+#section5,
+#industriaHogar1,
+#industriaHogar3,
+#granos1,
+#granos3,
+#jardin1,
+#jardin3,
+#madera1,
+#madera3 {
+  background-color: var(--color-gris-light);
+  color: var(--color-blanco);
+}
